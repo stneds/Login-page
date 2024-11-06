@@ -1,21 +1,100 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
-
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+}
+html, body{
+  font-family: 'Inter' , sans-serif;
+}
+.container{
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+.container .header{
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  margin-bottom: 40px;
+}
+.container .header span{
+  padding-top: 15px;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 24px;
 }
 
-body {
-  color: var(--foreground);
-  background: var(--background);
-  font-family: Arial, Helvetica, sans-serif;
+.container form{
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.container form .inputContainer{
+  margin-bottom: 9px;
+  margin-left: 3px;
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+}
+
+.container form .button{
+  margin-top: 5px;
+}
+
+.container form .footer{
+  padding-top: 4px;
+}
+
+.container form .inputContainer label{
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19px;
+  margin-bottom: 8px;
+}
+.container form .inputContainer input{
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  padding: 16px;
+  width: 520px;
+  height: 49px;
+  border: 1px solid #5C73DB;
+  border-radius: 12px;
+}
+
+.container form a {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19px;
+  padding-top: 16px;
+  padding-bottom: 16px;
+  color: #5C73DB;
+}
+
+.container form .button{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+  border: none;
+  width: 300;
+  height: 40;
+  background-color: #4763E4;
+  border-radius: 12px;
+  font-size: 18px;
+  line-height: 22px;
+  gap: 15px;
+  color: white;
+}
+.container form .botao{
+  display: flex;
+  justify-content:center ;
+  width: 40px;
+  height: 17;
 }
